@@ -5,15 +5,15 @@ ef raizes(a, b, c):
 
         delta *= (-1)
         p_real = -b/2*a
-        p_im = sqrt(delta)
+        p_im = (delta)**(1/2)
         print('Raiz1: ', p_real, '+', p_im)
         print('Raiz2: ', p_real, '-', p_im)
         valor = 1
 
     elif (delta > 0):
 
-        Raiz1 = (-b + (sqrt(delta)))/2*a
-        Raiz2 = (-b - (sqrt(delta)))/2*a
+        Raiz1 = (-b + ((delta)**(1/2)))/2*a
+        Raiz2 = (-b - ((delta)**(1/2)))/2*a
         print('Raiz1: ', Raiz1, 'Raiz2: ', Raiz2)
         valor = 0
 
@@ -30,7 +30,7 @@ def main():
     b = int(input('Insira um valor.'))
     c = int(input('insira um valor.'))
 
-    raizes(a, b, c)
+    
     resultado = raizes(a, b, c)
     print(resultado)
 
